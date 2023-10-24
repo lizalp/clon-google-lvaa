@@ -1,0 +1,206 @@
+body {
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+/* Navegacion */
+header{
+    /*background-color: aqua;*/
+    width: 100%;
+    height: 60px;
+}
+
+/*acceder a nav a traves de header */
+header nav{
+    display: flex; /*display flex es una caracteristica pa mover y deshacer*/
+    justify-content: flex-end;
+    /*background-color: blueviolet;*/
+}
+ header nav .nav-right-section {
+   /* background-color: aquamarine;*/
+    width: 250px;
+    height: auto;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ a{
+    text-decoration: none;
+ }
+
+ /* ancla del nav: accede a dentro del nav*/
+ nav .nav-right-section a{
+    color: rgba(0,0,0,.87); /*color del texto*/
+    margin-right: 20px;
+ }
+
+ nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 25px;
+    height: 25px;
+    background-size:contain; /*significa que estan ligados*/
+}
+
+nav .nav-right-section img{
+    /* redondeado de bordes*/
+    border-radius: 100%;
+    width: 30px;
+    margin-left: 20px;
+}
+
+/* Main */
+main {
+    margin-top: 150px;
+    /*background-color: aqua;*/
+    /*centrar elementos*/
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+main .main-logo{
+    width: 500px;
+    margin-bottom: 40px;
+    /*centrado absoluto*/
+    margin: 0 auto; /*primer valor = 0 es en vertical, luego es horizontal=auto*/
+}
+
+main .main-logo img{
+    height: 120px;
+}
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+main .main-input-container{
+    width: 525px;
+    border: 1px solid #dfe1e5;
+    border-radius: 20px;
+}
+
+main .main-input input{
+    height: 25px;
+    border: none;
+    /*outline- quitar contorno al accionar*/
+    outline: none;
+    width: 450px;
+}
+
+/* efecto sombra (hover) al poner el mouse sin accionar */
+main .main-input-container:hover{
+    border-color: #dfe1e500; 
+    /* primer valor: cuanto se desplaza horizontalmente, segundo valor //
+    segundo valor: desplazamiento vertical //
+    desenfoque  */
+    box-shadow: 0 1px 5px #dfe1e5; 
+}
+
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain; /*quiero que este contenida dentro del elemento mas grande */
+    background-position: center;
+    /*Propiedad para que no se repoita*/
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+    padding-left: 15px;
+    margin-right: 10px;
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1200px-Google_mic.svg.png);
+    width: 14px;
+    height: 14px;
+    padding-left: 10px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    width: 14px;
+    height: 14px;
+    padding-left: 30px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+}
+
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons div {
+    /*background-color: aqua;*/
+    /* inline: inline block pone los botones en una sola linea*/
+    display: inline-block;
+}
+
+main .main-buttons button{
+    border: 0;
+    height: 35px;
+    background-color: #f8f9fa;
+    font-size: 15px;
+    color: #3c4043;
+    border-radius: 10px;
+    padding: 0 15px;
+    margin-right: 15px;
+    border: 1px solid #f8f9fa;
+}
+
+main .main-buttons button:hover{
+    box-shadow: 0 1px 1px #20212447;
+    border: 1px solid #dadce0;
+}
+
+/* footer
+
+ */
+
+ .ubicacion{
+    background-color: #f4f4f4;
+    font-size: 15px;
+    color: #7e7e7e;
+    padding-left: 5%;
+    padding: 20px;
+ }
+
+ .separador{
+    background-color: #9b9b9b;
+    padding: 1px;
+    accent-color: 0;
+ }
+
+ .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 20px;
+    font-size: 15px;
+    color: #7e7e7e;
+    justify-content: space-between;
+ }
+
+ 
+ .left-contenedor{
+    
+   
+    font-size: 15px;
+    color: #7e7e7e;
+  
+ }
+
+ .right-contenedor{
+   
+    font-size: 15px;
+    color: #7e7e7e;
+ }
+
